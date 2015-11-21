@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Lesson0</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      p
+      {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Hello C++</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="../About/About.html">About</a></li>
+            <li><a href="../About/Contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    
+    <div class="container">
+
+    <div class="starter-template">
+    <h1>Say Hello to C++</h1>
+    <p class="lead">看過不少程式語言，我覺得程式基礎還是要打在C++上，因為C++有助於我們學習很多的解題方式、演算法等等的，也可以快速上手程式語言的邏輯，所以我想以C++當作教學語言。</p>
+		<br>
+		<p>
+		要寫程式首先需要有編輯器，最簡單上手的便是記事本，當然，很不好用，那要用什麼ㄋ？？
+		<br>
+		我自己剛開始練習是使用dev C++真的蠻容易上手的，不過CodeBlock也是值得推薦。下載下來安裝完成就可以使用嘍！！以下附上連結：
+		<br>
+		<a href="#"> dev C++</a>
+		<a href="#"> CodeBlock</a>
+		<br>
+		安裝好之後，就是準備開始我們的第一支程式吧！！！
+		<br>
+		首先要先看到C++的一些規定：
+		<br>
+		#include <iostream>
+		<br>
+    using namesapce std;
+    <br>
+    int main (void)
+    <br>
+    {
+    <br>
+		//your code 
+		<br>
+    return 0;
+    <br>
+    }
+    <br>
+		可以看到這樣一個簡單的程式，其實什麼都不會輸出，但是對於電腦卻是可以看得懂的喔！！！
+		<br>
+		我需要一行一行稍微的帶過一下，讓大家了一下為什麼需要這些英文。
+		<br>
+    <br>
+    <br>
+		#include -> 的工作是讓電腦在編譯的過程會把一些已經寫好ㄉ檔案加入進來，像iostream就是之前的人已經寫的一個I/O檔，所以在使用cout cin 等等指令，電腦它才看得懂。至於編譯是什麼，之後會在提到。
+		<br>
+    <br>
+		using namespace std; -> 這行很重要，因為如果沒有這行，你就必須告訴電腦cout cin 是從哪個libarary出現的，比如說：std::cout std::cin 因為cout cin 是在std 這個library你如果沒有告訴電腦，它可能會找不到。
+		<br>
+    <br>
+		int main (void) -> 這行便是主程式，也就是程式的起頭，可以想像成一個起點，所有的執行都是從這邊開始ㄉ，上面都只是在告訴電腦我需要用到什麼工具這樣而已。
+		<br>
+    <br>
+		{              -> 括弧中間放要寫的程式
+		<br>
+	  // your code    -> 寫上自己的程式
+		<br>
+		return 0;      -> 可有可無，只是告訴電腦程式結束了！！
+		<br>
+    <br>
+		}
+		<br>
+    <br>
+    <br>
+		C++有一個既定的規定，每一行程式的結束都要加上;不然電腦會不知道什麼時候是看完一句話。
+		<br>
+    <br>
+    <br>
+		說了這麼多，最重要的還是練習呀！！！來看看習題吧！！
+		</p>
+        </div>
+		
+    <div class="bs-example" data-example-id="textarea-form-control">
+    
+    <form method="post" action="Lesson0.php">
+      <textarea class="form-control" rows="7" placeholder="Textarea" input type ="text" name ="code"></textarea>
+    </div>
+     <div>
+      <i class="fa fa-upload"></i>
+      <input type="submit" class="btn btn-info btn-lg button-down">
+     </div>
+    </form>
+    <!-- <form action="Lesson0.php" method="post" enctype="multipart/form-data">
+      檔案名稱:<input type="file" name="file" id="file" /><br />
+      <input type="submit" name="submit" value="上傳檔案" />
+    </form> -->
+    <!-- <form action="Lesson0.php" method="post" enctype="multipart/form-data">
+　選擇檔案:<input type="file" name="file" id="file" /><br />
+　<input type="submit" name="submit" value="上傳檔案" />
+　</form> -->
+    
+    </div><!-- /.container -->
+    
+
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Lesson5</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <style>
+      p
+      {
+        font-size: 18px;
+      }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="Lesson.html">Learning C++</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="../About/About.html">About</a></li>
+            <li><a href="../About/Contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Array</h1>
+        <p class="lead">接下來要進入新的觀念ㄌ，這被稱為陣列Array。
+          <br>
+          它的特性是甚麼ㄋ？其實它就只是一個比較長的記憶體空間，可以讓你儲存更多同類型的資料，比如說，你可能會有100筆客戶的資料，這時候你當然就會想要用一個array把它存起來。這樣也比較好管理，比較好做資料的處理。
+        </p>
+        <br>
+        <p>
+          這時候你就會問，那陣列到底要怎麼用，其時很簡單。
+          <br>
+          一樣要宣告，例如：<strong>int name_of_array[100];</strong>，這樣就可以存100個integer的資料ㄌ，當然也可以有其他不同的類型，像：float、char......等等ㄉ。
+        </p>
+        <br>
+        <br>
+        <p>
+          接下來你就會問，那如果我有100筆資料，我要怎麼放進array裡面，好像沒辦法直接cin對不對？沒錯！！！不能直接cin，那怎麼辦？
+        <br>
+          你只要想array既然是放同類型的東西，要重複放置這些東西，所以很直覺要重複做這些動作是不是應該要for loop，答案就出來ㄌ。
+        </p>
+        <br>
+        <p>
+          for (int i = 0 ; i < length(array_name) ; i++ )
+          <br>
+          {
+          <br>
+          cin >> array_name[i];
+          <br>
+          }
+          <br>
+          我解釋一下吧，所以我用一個for迴圈把array從第0個位置開始放，放到array的長度滿為止，然後一直重複執行cin這件事情。
+          <br>
+          這樣每一筆資料就會被放到array的每個位置中ㄌ。
+        </p>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
